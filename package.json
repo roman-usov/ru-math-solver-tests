@@ -1,10 +1,13 @@
 {
   "name": "template-project",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=10.0.0"
+  },
   "description": "!template-project",
   "main": "src/script.js",
   "scripts": {
-    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "test": "jest --coverage",
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist",
     "lint": "eslint src/script.js"
@@ -22,8 +25,8 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.17.10",
-    "@babel/core": "^7.18.5",
-    "@babel/preset-env": "^7.18.2",
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
     "@happy-dom/jest-environment": "^5.3.0",
     "eslint": "^8.17.0",
     "eslint-config-airbnb": "^19.0.4",
